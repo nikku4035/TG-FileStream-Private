@@ -38,7 +38,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
                             ]
                         ]
                     ),
@@ -80,7 +80,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                                InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
@@ -156,7 +156,7 @@ async def help_handler(bot, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/{Var.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
                         ]
                     ]
                 ),
