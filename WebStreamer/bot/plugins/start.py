@@ -39,6 +39,10 @@ async def start(b, m):
                         [
                             [
                                 InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
+                            ],
+                            [
+                                InlineKeyboardButton("🔄 Refresh / Try Again",
+                                                     url=f"https://t.me/filestreambiswa_bot?start=Biswa04_{usr_cmd}")
                             ]
                         ]
                     ),
@@ -157,7 +161,11 @@ async def help_handler(bot, message):
                     [
                         [
                             InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
-                        ]
+                        ],
+                        [
+                                InlineKeyboardButton("🔄 Refresh / Try Again",
+                                                     url=f"https://t.me/filestreambiswa_bot?start=Biswa04_{usr_cmd}")
+                            ]
                     ]
                 ),
                 parse_mode="markdown"

@@ -38,7 +38,11 @@ async def private_receive_handler(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
-                        ]
+                        ],
+                        [
+                                InlineKeyboardButton("🔄 Refresh / Try Again",
+                                                     url=f"https://t.me/filestreambiswa_bot?start=Biswa04_{usr_cmd}")
+                            ]
                     ]
                 ),
                 parse_mode="markdown"
