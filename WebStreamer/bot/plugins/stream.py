@@ -33,7 +33,7 @@ async def private_receive_handler(c: Client, m: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
+                text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n Join Channel and Hit Refresh",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -41,7 +41,7 @@ async def private_receive_handler(c: Client, m: Message):
                         ],
                         [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/filestreambiswa_bot?start=Biswa04_{usr_cmd}")
+                                                     url=f"/start")
                             ]
                     ]
                 ),
