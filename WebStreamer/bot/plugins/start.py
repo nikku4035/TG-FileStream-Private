@@ -34,16 +34,16 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Deals Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot! \n\n Join Channel and Hit Refresh ",
+                    text="**Please Join My Deals Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot! \n\n Join Channel and send /start again ",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
-                            ],
-                            [
-                                InlineKeyboardButton("🔄 Refresh ",
-                                                     url=f"/start")
                             ]
+                            # [
+                            #     InlineKeyboardButton("🔄 Refresh ",
+                            #                          url=f"/start")
+                            # ]
                         ]
                     ),
                     parse_mode="markdown"
@@ -80,16 +80,16 @@ async def start(b, m):
             except UserNotParticipant:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n Join Channel and Hit Refresh",
+                    text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n Join Channel and send /start again",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
                                 InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
-                            ],
-                            [
-                                InlineKeyboardButton("🔄 Refresh ",
-                                                     url=f"/start")
                             ]
+                            # [
+                            #     InlineKeyboardButton("🔄 Refresh ",
+                            #                          url=f"/start")
+                            # ]
                         ]
                     ),
                     parse_mode="markdown"
@@ -156,16 +156,16 @@ async def help_handler(bot, message):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Deals Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n Join Channel and Hit Refresh",
+                text="**Please Join My Deals Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!\n\n Join Channel and send /start again",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton("🤖 Join Deals Channel", url=f"https://t.me/technikkssdeals")
-                        ],
-                        [
-                                InlineKeyboardButton("🔄 Refresh ",
-                                                     url=f"/start")
-                            ]
+                        ]
+                        # [
+                        #         InlineKeyboardButton("🔄 Refresh ",
+                        #                              url=f"/start")
+                        #     ]
                     ]
                 ),
                 parse_mode="markdown"
